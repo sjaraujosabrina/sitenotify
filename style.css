@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas: "header header header"
+                         "nav nav nav"
+                         "aside aside aside"
+                         "section section section"
+                         "footer footer footer";
+    grid-template-rows: 2vh 80vh 80vh 80vh 80vh;
+    grid-template-columns: 33% 34% 33%;
+}
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    background-color: #2DCC70;
+    align-items: center;
+}
+nav{
+    grid-area: nav;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    background-image: url(banner.png);
+    background-size: cover;
+    align-items: flex;
+    width: auto;
+}
+nav div{
+    flex-direction: column;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    flex-direction: column;
+    background-color: #2DCC70;
+    flex-direction: row;
+}
+
+nav h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 70px;
+    color: white;
+}
+h1 span{
+    color: #2DCC70;
+}
+
+nav p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 30px;
+    text-align: left;
+}
+aside {
+    grid-area: aside;
+    background-color: #E3E3E3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+aside h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.493);
+    align-items: center;
+    justify-content: center;
+}
+
+
+section{
+    grid-area: section;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+footer{
+    grid-area: footer;
+    background-color: #E3E3E3;
+    display: flex;
+    justify-content: center;
+}
